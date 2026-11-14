@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: 'Geist Variable', system-ui, -apple-system, sans-serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-brand-green: var(--brand-green);
+  --color-brand-green-soft: var(--brand-green-soft);
+  --color-brand-green-border: var(--brand-green-border);
+  --color-brand-red: var(--brand-red);
+  --color-brand-red-soft: var(--brand-red-soft);
+  --color-brand-red-border: var(--brand-red-border);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  --background: #202020;
+  --foreground: #f4f4f5;
+  --card: #262626;
+  --card-foreground: #f4f4f5;
+  --popover: #262626;
+  --popover-foreground: #f4f4f5;
+  --primary: #ffffff;
+  --primary-foreground: #202020;
+  --secondary: #2e2e2e;
+  --secondary-foreground: #e4e4e7;
+  --muted: #292929;
+  --muted-foreground: #a1a1aa;
+  --accent: #2e2e2e;
+  --accent-foreground: #f4f4f5;
+  --destructive: #e04f44;
+  --border: #333333;
+  --input: #333333;
+  --ring: #2ea834;
+  --radius: 0.5rem;
+
+  /* UPsolve logo palette */
+  --brand-green: #46c94c;
+  --brand-green-soft: rgba(21, 122, 26, 0.22);
+  --brand-green-border: rgba(70, 201, 76, 0.35);
+  --brand-red: #f26b61;
+  --brand-red-soft: rgba(166, 36, 24, 0.24);
+  --brand-red-border: rgba(242, 107, 97, 0.38);
+
+  /* Motion tokens (Emil Kowalski / animate skill) */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans antialiased scroll-smooth;
+    scrollbar-color: #3f3f46 transparent;
+    scrollbar-width: thin;
+  }
+
+  body {
+    @apply bg-background text-foreground selection:bg-brand-green selection:text-white;
+  }
+}
+
+@keyframes upsolve-hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-enter {
+  animation: upsolve-hero-in 260ms var(--ease-out) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter {
+    animation: upsolve-hero-fade 200ms var(--ease-out) both;
+  }
+}
+
+@keyframes upsolve-hero-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
