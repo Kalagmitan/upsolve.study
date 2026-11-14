@@ -1,4 +1,4 @@
-import type { Track } from "@/features/tracks";
+import type { Track } from "./track";
 
 export interface CompetitionImage {
   src: string;

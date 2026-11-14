@@ -1,4 +1,4 @@
-import type { CompetitionWin, TrackFilter } from "./types"
+import type { CompetitionWin, TrackFilter } from "./competition"
 
 /** Filters wins by track and a free-text query over the searchable fields. */
 export function filterWins(

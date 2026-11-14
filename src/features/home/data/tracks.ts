@@ -1,4 +1,4 @@
-import type { TrackInfo } from "../domain/types";
+import type { TrackInfo } from "../domain/track";
 
 export const TRACKS: TrackInfo[] = [
   {

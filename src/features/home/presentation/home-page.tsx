@@ -1,9 +1,11 @@
 import { useState } from "react"
 import { Separator } from "@/core/components/ui/separator"
-import { CompetitionsSection, type TrackFilter } from "@/features/competitions"
-import { InternshipsSection } from "@/features/internships"
-import { TracksSection, type Track } from "@/features/tracks"
-import { HeroSection } from "./components/hero-section"
+import type { TrackFilter } from "../domain/competition"
+import type { Track } from "../domain/track"
+import { CompetitionsSection } from "./components/competitions/competitions-section"
+import { InternshipsSection } from "./components/internships/internships-section"
+import { TracksSection } from "./components/tracks/tracks-section"
+import { HeroSection } from "./components/hero/hero-section"
 
 export function HomePage() {
   // Lifted here because the Tracks section drives the Competitions filter.

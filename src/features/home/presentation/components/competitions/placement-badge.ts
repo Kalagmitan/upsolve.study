@@ -1,4 +1,4 @@
-import type { CompetitionWin } from "../domain/types"
+import type { CompetitionWin } from "../../../domain/competition"
 
 export function placementBadgeClass(tier: CompetitionWin["tier"]) {
   if (tier === "gold") {

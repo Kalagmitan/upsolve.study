@@ -1,4 +1,4 @@
-import type { TrackFilter } from "../domain/types"
+import type { TrackFilter } from "../../../domain/competition"
 
 export const TRACK_FILTERS: { value: TrackFilter; label: string }[] = [
   { value: "All", label: "All" },
