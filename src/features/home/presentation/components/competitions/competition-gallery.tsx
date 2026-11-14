@@ -1,5 +1,5 @@
 import { Maximize2 } from "lucide-react"
-import type { CompetitionImage } from "../../domain/types"
+import type { CompetitionImage } from "../../../domain/competition"
 
 interface CompetitionGalleryProps {
   competition: string

@@ -1,4 +1,4 @@
-import type { CompetitionWin } from "../domain/types";
+import type { CompetitionWin } from "../domain/competition";
 
 export const COMPETITION_WINS: CompetitionWin[] = [
   {

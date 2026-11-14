@@ -1,4 +1,4 @@
-import type { InternshipRecord } from "../domain/types";
+import type { InternshipRecord } from "../domain/internship";
 
 // Replace these sample entries with your members' real internships and roles.
 export const INTERNSHIPS: InternshipRecord[] = [

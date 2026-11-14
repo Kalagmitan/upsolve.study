@@ -1,6 +1,6 @@
 import { Badge } from "@/core/components/ui/badge"
-import { placementBadgeClass } from "../placement-badge"
-import type { CompetitionImage, CompetitionWin } from "../../domain/types"
+import { placementBadgeClass } from "./placement-badge"
+import type { CompetitionImage, CompetitionWin } from "../../../domain/competition"
 import { CompetitionGallery } from "./competition-gallery"
 
 interface CompetitionCardProps {

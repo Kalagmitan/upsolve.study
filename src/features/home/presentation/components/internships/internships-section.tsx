@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/core/components/ui/table"
-import { INTERNSHIPS } from "../../data/internships"
+import { INTERNSHIPS } from "../../../data/internships"
 
 export function InternshipsSection() {
   return (

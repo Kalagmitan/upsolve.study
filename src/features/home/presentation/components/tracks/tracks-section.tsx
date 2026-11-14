@@ -1,6 +1,6 @@
-import { TRACK_ICONS } from "../constants"
-import { TRACKS } from "../../data/tracks"
-import type { Track } from "../../domain/types"
+import { TRACK_ICONS } from "./track-icons"
+import { TRACKS } from "../../../data/tracks"
+import type { Track } from "../../../domain/track"
 
 interface TracksSectionProps {
   onSelectTrack: (track: Track) => void

@@ -1,8 +1,8 @@
 import { Search, X } from "lucide-react"
 import { Input } from "@/core/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/core/components/ui/tabs"
-import { TRACK_FILTERS } from "../constants"
-import type { TrackFilter } from "../../domain/types"
+import { TRACK_FILTERS } from "./constants"
+import type { TrackFilter } from "../../../domain/competition"
 
 interface CompetitionFiltersProps {
   selectedTrack: TrackFilter

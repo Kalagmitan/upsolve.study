@@ -1,7 +1,7 @@
 import { X } from "lucide-react"
 import { Button } from "@/core/components/ui/button"
 import { useEscapeKey } from "@/core/hooks/use-escape-key"
-import type { LightboxImage } from "../../domain/types"
+import type { LightboxImage } from "../../../domain/competition"
 
 interface ImageLightboxProps {
   image: LightboxImage
